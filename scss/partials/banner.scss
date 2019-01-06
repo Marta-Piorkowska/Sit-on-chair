@@ -1,0 +1,132 @@
+.main-banner-bg {
+  background: rgba(250, 250, 250, 1);
+  background: -moz-linear-gradient(top, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(204, 204, 212, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(204, 204, 212, 1) 100%);
+  background: -o-linear-gradient(top, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(204, 204, 212, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(204, 204, 212, 1) 100%);
+  background: linear-gradient(to bottom, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(204, 204, 212, 1) 100%);
+  height: 450px;
+}
+
+.banner {
+  height:450px;
+  display: flex;
+}
+.banner-prev,
+.banner-next {
+  width: 100px;
+  font-size: 70px;
+  color: var(--color);
+  border:0;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+.banner-prev:active,
+.banner-next:active {
+  color: #000;
+}
+
+.banner-prev:hover,
+.banner-next:hover {
+  transform: scale(1.1);
+}
+
+.banner-next {
+  order: 1;
+}
+
+.slider ul{
+  list-style: none;
+}
+
+.slider li{
+  display: none;
+  width:100%;
+  height:100%;
+}
+
+.slider .visible{
+  display: inline-block;
+}
+
+.banner-slide {
+  width:100%;
+  height:100%;
+  transition: 1s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-image{
+  height: 100%;
+  width: 43%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .one{
+    width: 100%;
+    height: 100%;
+  }
+  .two{
+    width: 100%;
+    height: 70%;
+    margin-top: 40px;
+  }
+  .three{
+    width: 90%;
+    height: 70%;
+  }
+}
+
+.banner-content{
+  height: 100%;
+  width: 57%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-right: 30px;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.banner-title{
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.banner-title span {
+  color: var(--color);
+}
+
+.banner-text{
+  font-size: 13px;
+  line-height:20px;
+  padding: 0 17px;
+}
+
+.banner-button{
+  text-decoration: none;
+  color: white;
+  background: var(--color);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 30px 100px;
+  border: none;
+}
+
+.banner-button a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.banner-button:hover{
+  cursor: pointer;
+  background: darken(#24BAA0, 5);
+  transition:0.5s;
+
+}

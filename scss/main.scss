@@ -1,0 +1,39 @@
+@import "partials/header";
+@import "partials/banner";
+@import "partials/main";
+@import "partials/price";
+@import "partials/form";
+@import "partials/footer";
+//zmienić na scss
+:root {
+  --color: #24BAA0;
+  --color2: #1F8976;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  width: 1055px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 22px;
+  color: #575757;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 6px;
+  border-bottom: 7px solid var(--color);
+  width: 320px;
+  margin-top: 40px;
+}
+
+
